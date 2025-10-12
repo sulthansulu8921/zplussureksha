@@ -1,0 +1,101 @@
+body{
+  margin-top: 160px;
+  width: 100%;
+}
+
+.main {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* Top Section */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.contact-info{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(17, 53, 182);
+  color: white;
+  height: 100%;
+  align-items: center;
+}
+
+.main-left,
+.main-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.main-logo {
+  width: 100%;
+  height: auto;
+}
+
+.main-image {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Bottom CTA Section */
+.main-cta {
+  background-color: #0e3a9fd8; /* green section like model */
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+.main-cta h1 {
+  color: rgb(249, 104, 104);
+  -webkit-text-stroke: 1px rgb(2, 10, 20);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.main-cta p {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.main-cta button {
+  background-color: #ffdd57;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 45px;
+  font-size: medium;
+}
+
+.hero-cta button:hover {
+  background-color: #f7c600;
+}
+
+@media (max-width: 768px) {
+  .contact-info{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-left,
+  .main-right {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-image {
+    max-width: 80%;
+  }
+}

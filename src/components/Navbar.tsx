@@ -8,7 +8,8 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <img src="/image/zplus.png" alt="Zplus Logo" className="logo" />
+        {/* Logo */}
+        <img src="/image/Z+.png" alt="Zplus Logo" className="logo" />
 
         {/* Hamburger Icon */}
         <div
@@ -20,12 +21,33 @@ const Navbar: React.FC = () => {
           <span></span>
         </div>
 
+        {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
-          <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
-          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          <li>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>
+              About
+            </Link>
+          </li>
+          {/* <li>
+            <Link to="/products" onClick={() => setMenuOpen(false)}>
+              Products
+            </Link>
+          </li> */}
+          <li>
+            <Link to="/projects" onClick={() => setMenuOpen(false)}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
