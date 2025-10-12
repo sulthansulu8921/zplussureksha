@@ -18,7 +18,7 @@ const Mainpage: React.FC = () => {
       <div className="main-container">
         <div className="main-left">
           <img
-            src="/image/carus.jpeg"
+            src="./image/carus.jpeg"
             alt="Zplus Logo"
             className="main-logo"
           />

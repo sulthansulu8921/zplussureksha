@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="container">
         {/* Logo */}
-        <img src="/image/Z+.png" alt="Zplus Logo" className="logo" />
+        <img src="./image/Z+.png" alt="Zplus Logo" className="logo" />
 
         {/* Hamburger Icon */}
         <div

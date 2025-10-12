@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <img src="/image/Z+ LOGO.png" alt="logo" />
+          <img src="./image/Z+ LOGO.png" alt="logo" />
           <p>
             Delivering high-quality doors and windows for modern homes with
             trust and excellence.

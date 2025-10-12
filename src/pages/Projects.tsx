@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       <div className="projects-grid">
         {/* Example Project Cards */}
         <div className="project-card">
-          <img src="/image/modernwindow.png" alt="Project 1" className="project-image" />
+          <img src="./image/modernwindow.png" alt="Project 1" className="project-image" />
           <div className="project-info">
             <h3>Modern Window Installation</h3>
             <p>Completed in 2024, this modern villa features energy-efficient windows.</p>
@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="project-card">
-          <img src="/image/Sliding Door.png" alt="Project 2" className="project-image" />
+          <img src="./image/Sliding Door.png" alt="Project 2" className="project-image" />
           <div className="project-info">
             <h3>Sliding Door Upgrade</h3>
             <p>Elegant sliding doors added to a luxury apartment balcony.</p>
