@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zplussureksha/static/css/main.4e139737.css",
+    "main.js": "/zplussureksha/static/js/main.c8c4d1ab.js",
+    "index.html": "/zplussureksha/index.html",
+    "main.4e139737.css.map": "/zplussureksha/static/css/main.4e139737.css.map",
+    "main.c8c4d1ab.js.map": "/zplussureksha/static/js/main.c8c4d1ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e139737.css",
+    "static/js/main.c8c4d1ab.js"
+  ]
+}
