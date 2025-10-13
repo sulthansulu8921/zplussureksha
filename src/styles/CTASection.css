@@ -1,33 +1,138 @@
+/* ===============================
+   🌌 Futuristic CTA Section
+=================================*/
 .cta {
-  background-color: #007bff; /* strong blue */
+  position: relative;
+  background: radial-gradient(circle at top right, #141e30, #0a0f1f);
   color: #fff;
   text-align: center;
-  padding: 70px 20px;
+  padding: 100px 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeInScale 1s ease-in-out;
 }
 
+/* Floating particle effect background */
+.cta::before,
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 180, 0.4), transparent 70%);
+  animation: floatMove 8s ease-in-out infinite alternate;
+  filter: blur(70px);
+}
+
+.cta::before {
+  top: -100px;
+  left: -80px;
+}
+
+.cta::after {
+  bottom: -120px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(255, 100, 200, 0.4), transparent 70%);
+}
+
+/* ===============================
+   ✨ Text Styling
+=================================*/
 .cta h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #00ffb2, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.2px;
+  animation: textFade 2s ease-in-out;
 }
 
 .cta p {
   font-size: 1.1rem;
-  margin-bottom: 24px;
+  color: #cfd8dc;
+  max-width: 650px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+  animation: textFade 2.2s ease-in-out;
 }
 
+/* ===============================
+   🚀 Button Styling
+=================================*/
 .cta button {
-  background-color: #fff;
-  color: #007bff;
-  padding: 12px 30px;
-  font-size: 1rem;
-  font-weight: 600;
+  background: linear-gradient(90deg, #00ffb2, #00c6ff);
+  color: #0a0f1f;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
+  padding: 14px 42px;
+  font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.4), transparent, rgba(255,255,255,0.4));
+  transition: all 0.6s ease;
+}
+
+.cta button:hover::after {
+  left: 100%;
 }
 
 .cta button:hover {
-  background-color: #f0f0f0;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.6);
+}
+
+/* ===============================
+   ✨ Animations
+=================================*/
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatMove {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(40px) translateX(40px); }
+}
+
+/* ===============================
+   📱 Responsive
+=================================*/
+@media (max-width: 768px) {
+  .cta {
+    padding: 70px 16px;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .cta button {
+    font-size: 1rem;
+  }
 }

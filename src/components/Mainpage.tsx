@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Mainpage.css";
 
+
 const Mainpage: React.FC = () => {
   // Replace with your WhatsApp number (with country code, no '+' or spaces)
   const whatsappNumber = "919497376797";
@@ -18,7 +19,7 @@ const Mainpage: React.FC = () => {
       <div className="main-container">
         <div className="main-left">
           <img
-            src="./image/carus.png"
+            src={`${process.env.PUBLIC_URL}/image/carus.png`}
             alt="Zplus Logo"
             className="main-logo"
           />

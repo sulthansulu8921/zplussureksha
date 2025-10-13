@@ -1,7 +1,8 @@
 
 .navbar {
   width: 100%;
-  background: linear-gradient(to right, #b3dcf4, #98d030);
+  /* background: linear-gradient(to right, #b3dcf4, #98d030); */
+   background: linear-gradient(90deg, #13b894, #74a1da, #03fc46);
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +35,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 30px;
 }
 
 .nav-links li a {
