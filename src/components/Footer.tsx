@@ -41,9 +41,9 @@ const Footer: React.FC = () => {
             , Panayur PO ,Chittur Palakkd 678552
           </p>
           <h4> For enquiry</h4>
-          <p>📞 +919497376797 </p>
+          <p>📞 +91 9497376797 </p>
           <h4> Customer service</h4>
-          <p>📞 +919447516191</p>
+          <p>📞 +91 9447516191</p>
           <p>✉️ zplussureksha@gmail.com</p>
         </div>
       </div>
