@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 
 const Contact: React.FC = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    pincode: "",
+    address: "",
+    requirement: "",
+    message: "",
+  });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -13,21 +21,32 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // ✅ Your WhatsApp number in international format (no + or spaces)
-    const phoneNumber = "919946229098"; // example: India +91
+    const phoneNumber = "919497376797"; // ✅ Your WhatsApp number (India format)
 
-    // ✅ Pre-fill message with user's input
-    const text = `Hello, I'm ${form.name}.\nEmail: ${form.email}\nMessage: ${form.message}`;
+    // ✅ Combine all user data into one message
+    const text = `Hello, I'm ${form.name}.
+Email: ${form.email}
+Mobile: ${form.mobile}
+Pincode: ${form.pincode}
+Address: ${form.address}
+Requirement: ${form.requirement}
+Message: ${form.message}`;
+
     const encodedText = encodeURIComponent(text);
-
-    // ✅ WhatsApp Web / App URL
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
-    // ✅ Open WhatsApp
     window.open(whatsappURL, "_blank");
 
-    // Reset form (optional)
-    setForm({ name: "", email: "", message: "" });
+    // ✅ Reset form
+    setForm({
+      name: "",
+      email: "",
+      mobile: "",
+      pincode: "",
+      address: "",
+      requirement: "",
+      message: "",
+    });
   };
 
   return (
@@ -51,12 +70,44 @@ const Contact: React.FC = () => {
           required
           className="contact-input"
         />
+        <input
+          name="mobile"
+          type="tel"
+          value={form.mobile}
+          onChange={handleChange}
+          placeholder="Your Mobile Number"
+          required
+          className="contact-input"
+        />
+        <input
+          name="pincode"
+          value={form.pincode}
+          onChange={handleChange}
+          placeholder="Your Pincode"
+          required
+          className="contact-input"
+        />
+        <input
+          name="address"
+          value={form.address}
+          onChange={handleChange}
+          placeholder="Your Address"
+          required
+          className="contact-input"
+        />
+        <input
+          name="requirement"
+          value={form.requirement}
+          onChange={handleChange}
+          placeholder="Your Requirement (e.g. Product or Service)"
+          required
+          className="contact-input"
+        />
         <textarea
           name="message"
           value={form.message}
           onChange={handleChange}
-          placeholder="Your Message"
-          required
+          placeholder="Additional Message"
           rows={4}
           className="contact-textarea"
         />

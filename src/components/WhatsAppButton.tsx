@@ -17,7 +17,7 @@ const WhatsAppButton: React.FC = () => {
       transition={{ duration: 1.5, repeat: Infinity }}
     >
       <img
-        src="./image/whatsapp_img.png"
+        src={`${process.env.PUBLIC_URL}/image/whatsapp_img.png`}
         alt="WhatsApp"
         className="whatsapp-icon-img"
       />

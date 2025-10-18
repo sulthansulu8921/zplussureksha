@@ -9,6 +9,9 @@ import ProductDetail from "./pages/ProductDetail";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
+import CallButton from "./components/CallButton";
+import Review from "./pages/Reviews";
+
 
 const App: React.FC = () => {
   return (
@@ -24,12 +27,14 @@ const App: React.FC = () => {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/Reviews" element={<Review />} />
           </Routes>
         </main>
         <Footer />
-
-        {/* 🟢 Fixed WhatsApp Button (stays visible on all pages) */}
+  
+     
         <WhatsAppButton />
+        <CallButton />
       </div>
     </Router>
   );

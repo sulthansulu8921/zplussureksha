@@ -9,7 +9,11 @@ const Navbar: React.FC = () => {
     <nav className="navbar_1">
       <div className="container">
         {/* Logo */}
-        <img src="./image/Z+.png" alt="Zplus Logo" className="logo" />
+        <img
+          src={`${process.env.PUBLIC_URL}/image/Z+.png`}
+          alt="Zplus Logo"
+          className="logo"
+        />
 
         {/* Hamburger Icon */}
         <div
@@ -48,10 +52,14 @@ const Navbar: React.FC = () => {
               Contact
             </Link>
           </li>
+         <li>
+            <Link to="/Reviews" onClick={() => setMenuOpen(false)}>
+              Reviews
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
-    
   );
 };
 

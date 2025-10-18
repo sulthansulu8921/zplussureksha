@@ -1,12 +1,12 @@
 .whatsapp-button {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   background-color: #3fa425;
   color: white;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .whatsapp-icon-img {
-  width: 200px;
+  width: 140px;
   height: 80px;
   object-fit: contain;
 }
