@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/ServicesSection.css";
 
 const services = [
-  { title: "Custom Door Installation", desc: "Tailored door solutions for your space." },
-  { title: "Window Replacement", desc: "Upgrade your home with modern, efficient windows." },
-  { title: "Home Rennovation", desc: "Keep your products in top condition." },
+  { title: "Customise Designing " },
+  { title: "Home Renovation Projects" },
+  { title: "Innovative Products" },
 ];
 
 const ServicesSection: React.FC = () => {
@@ -16,7 +16,7 @@ const ServicesSection: React.FC = () => {
           {services.map((service, i) => (
             <div key={i} className="service-card">
               <h3>{service.title}</h3>
-              <p>{service.desc}</p>
+              {/* <p>{service.desc}</p> */}
             </div>
           ))}
         </div>

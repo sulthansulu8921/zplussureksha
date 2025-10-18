@@ -1,4 +1,5 @@
-.footer {
+
+ .footer {
   background-color: #abb2f3e1;
   padding: 60px 20px 20px;
   color: #000000;
@@ -6,18 +7,26 @@
   width: 100%;
 }
 
-.logo{
-  margin-left: 30px;
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-
 .footer-logo img {
-  width: 150px;
+  width: 130px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-top: -20px;
 }
 
+.container_text {
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 
 .footer-container {
   max-width: 1200px;
@@ -26,23 +35,40 @@
   grid-template-columns: 1fr;
   gap: 40px;
 }
-.footer h2{
+
+.footer h2 {
   color: #f00404;
   font-size: medium;
-
 }
 
-.footer h4{
+.content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer h4 {
   color: #1b1414;
+  font-size: medium;
 }
-.footer h5{
-  color: #0d0a0a;
 
+.footer h5 {
+  color: #0d0a0a;
 }
 
 .footer-logo p {
-
   margin-top: -15px;
+}
+
+.footer-column {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.footer-info {
+  font-size: 40px;
 }
 
 @media (min-width: 768px) {
@@ -53,11 +79,10 @@
 
 .footer-column h4 {
   font-size: 1.1rem;
-  font-weight: 600;
   margin-bottom: 12px;
-
 }
-.footer p{
+
+.footer p {
   color: #020000;
 }
 
@@ -65,7 +90,6 @@
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 6px 0;
-  
 }
 
 .footer-column ul {
@@ -78,14 +102,34 @@
   margin-bottom: 8px;
 }
 
+/* ✅ Clean link styles for all footer links */
+.footer a {
+  text-decoration: none;
+  color: #1b1818;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #33117b;
+}
+
+/* Quick Links */
 .footer-column ul li a {
   text-decoration: none;
   color: #1b1818;
-  transition: color 0.3s;
-  font-weight: bold;
 }
 
-.footer-column ul li a:hover {
+/* Contact links */
+.footer a[href^="mailto:"],
+.footer a[href^="tel:"] {
+  text-decoration: none;
+  color: #1b1818;
+  font-size: medium;
+}
+
+.footer a[href^="mailto:"]:hover,
+.footer a[href^="tel:"]:hover {
+  text-decoration: none;
   color: #33117b;
 }
 
@@ -95,25 +139,4 @@
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
   font-size: 0.9rem;
-  
 }
-
-.footer-column span a{
- color: rgb(10, 14, 11);
- font-weight: bold;
- text-decoration: none;
- font-size: medium;
-}
-
-.footer-column a[href^="mailto:"] {
-  text-decoration: none;
-  color: #000000; 
-  font-weight: bold;
-  font-size: medium;
-}
-
-.footer-column a[href^="mailto:"]:hover {
-  color: #000000;
-  text-decoration: underline; 
-}
-

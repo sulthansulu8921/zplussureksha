@@ -9,7 +9,7 @@
 }
 
 .Reviews{
-     font-size: 2rem;
+     font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #222;
@@ -41,6 +41,6 @@
 .text_{
     font-weight: bold;
     margin-top: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: oblique;
 }

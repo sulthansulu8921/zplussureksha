@@ -16,8 +16,6 @@ const CTASection: React.FC = () => {
 
   return (
     <section className="cta">
-      <h2>Ready to Upgrade Your Home?</h2>
-      <p>Get a free quote today and experience the quality difference.</p>
       <button onClick={openWhatsApp}>Contact Us</button>
     </section>
   );

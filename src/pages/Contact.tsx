@@ -103,14 +103,14 @@ Message: ${form.message}`;
           required
           className="contact-input"
         />
-        <textarea
+        {/* <textarea
           name="message"
           value={form.message}
           onChange={handleChange}
           placeholder="Additional Message"
           rows={4}
           className="contact-textarea"
-        />
+        /> */}
         <button type="submit" className="contact-button">
           Send Message on WhatsApp
         </button>
