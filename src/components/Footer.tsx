@@ -7,14 +7,16 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img src="./image/Z+ LOGO.png" alt="logo" />
-          <p>
-            Delivering high-quality doors and windows for modern homes with
-            trust and excellence.
-          </p>
+          <h5>
+            Delivering High Quality 
+          </h5>
+          <h5> Doors Frame and Windows</h5>
+          <h5>Manufacturing | installation </h5>
+          <h5>Art & Painting | Delivery</h5>
         </div>
 
         <div className="footer-column">
-          <h4>Quick Links</h4>
+          <h1>Quick Links</h1>
           <ul>
             <li>
               <a href="/">Home</a>
@@ -35,21 +37,22 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-column">
-          <h4>Contact</h4>
-          <p>
-            📍 Registered Office Address :<br/> 9/47 Nellukuthupara , Nallepilly Road
-            , Panayur PO ,Chittur Palakkd 678552
-          </p>
-          <h4> For enquiry</h4>
-          <p>📞 +91 9497376797 </p>
-          <h4> Customer service</h4>
-          <p>📞 +91 9447516191</p>
-          <p>✉️ zplussureksha@gmail.com</p>
+          <h1>Contact Us</h1>
+          <h4>Sales:<span><a href="tel:9497376797">+91 9497376797</a></span> </h4>
+          
+          <h4> Customer Care:<span><a href="tel:9447516191">+91 9447516191</a></span></h4>
+            
+          <h4>Email:<p> zplussureksha@gmail.com</p></h4>
+          
+          <h4>Office Address: <p>
+           9/47 Nellukuthupara Nallepilly Road Panayur PO Chittur Palakkad Kerala South india 678552
+          </p></h4>
+           
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} MyCompany. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Zplus All rights reserved.</p>
       </div>
     </footer>
   );

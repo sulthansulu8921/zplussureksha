@@ -10,7 +10,28 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  animation: fadeInScale 1s ease-in-out;
+  /* animation: fadeInScale 1s ease-in-out; */
+
+}
+.cta{
+  animation: bounce 2s infinite; }
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+
 }
 
 /* Floating particle effect background */

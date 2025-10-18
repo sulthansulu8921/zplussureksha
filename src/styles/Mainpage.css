@@ -2,7 +2,6 @@
    🌍 Global Styles
 =================================*/
 body {
-  margin-top: 140px;
   font-family: "Poppins", sans-serif;
   /* background: radial-gradient(circle at top right, #1e1f35, #0a0b15); */
   color: #f3f3f3;
@@ -16,6 +15,7 @@ body {
   text-align: center;
   padding: 60px 0;
   animation: fadeInUp 0.8s ease-in-out;
+  margin-top: 140px;
 }
 
 /* ===============================
@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 0 20px;
   gap: 50px;
 }
@@ -40,7 +40,8 @@ body {
   gap: 24px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #7a00ff, #0072ff, #00f0ff);
+  /* background: linear-gradient(90deg, #7a00ff, #0072ff, #00f0ff); */
+  background-color: black;
   color: #fff;
   padding: 16px;
   font-weight: 500;
@@ -48,20 +49,28 @@ body {
   animation: glowBar 5s ease-in-out infinite alternate;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 150, 255, 0.2);
+  font-style: oblique;;
 }
 
 /* ===============================
    🖼️ Images and Logo
 =================================*/
-.main-left,
-.main-right {
-  flex: 1;
-  min-width: 280px;
+.main-left {
+  min-width: 200px;
+ 
+  height: auto;
 }
 
+
+.carousel img{
+  object-fit: contain;
+  
+}
+
+
 .main-logo {
-  width: 100%;
-  height: auto;
+width: 100%;
+  height: 400px;
   transition: transform 0.4s ease;
 }
 
@@ -70,7 +79,7 @@ body {
 }
 
 .main-image {
-  max-width: 420px;
+  max-width: 60px;
   height: auto;
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -110,14 +119,15 @@ body {
 }
 
 /* CTA Headings & Text */
-.main-cta h1 {
-  font-size: 2.4rem;
+.main-cta h2 {
+  font-size: 1.8rem;
   color: #fff;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 12px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  font-family: inherit;
 }
 
 .main-cta p {
@@ -168,6 +178,83 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(255, 153, 0, 0.6);
 }
+
+
+
+/* ====== Flip Text Animation ====== */
+
+.main-right {
+  background: #ffffff; 
+  color: #222; 
+}
+.font-size{
+  font-size: 60px;
+}
+
+.main-right h1 {
+  color: #000000;
+  font-weight: 700;
+}
+
+.flip-text {
+  color: #ffc107; 
+}
+
+.main-right p {
+  color: #444; 
+}
+
+.flip-text {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffc107; /* yellow highlight */
+  background-color: #000000;
+  border-radius: 5px;
+  width: 20vh;
+}
+
+.flip-text span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  animation: flipWords 8s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+/* Animate by shifting upward */
+@keyframes flipWords {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-100%);
+  }
+  63% {
+    transform: translateY(-100%);
+  }
+  66% {
+    transform: translateY(-200%);
+  }
+  96% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Optional subtle glow */
+.flip-text span {
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+
 
 /* ===============================
    ✨ Animations
@@ -243,5 +330,10 @@ body {
 
   .main-cta button {
     font-size: 1rem;
+  }
+
+  .main-logo {
+    max-height: 250px; /* ✅ Smaller height on mobile */
+    object-fit: contain;
   }
 }

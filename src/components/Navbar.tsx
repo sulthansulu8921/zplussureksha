@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar_1">
       <div className="container">
         {/* Logo */}
         <img src="./image/Z+.png" alt="Zplus Logo" className="logo" />
@@ -33,11 +33,11 @@ const Navbar: React.FC = () => {
               About
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/products" onClick={() => setMenuOpen(false)}>
               Products
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link to="/projects" onClick={() => setMenuOpen(false)}>
               Projects
@@ -51,6 +51,7 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
     </nav>
+    
   );
 };
 

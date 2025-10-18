@@ -4,7 +4,7 @@ import "../styles/ServicesSection.css";
 const services = [
   { title: "Custom Door Installation", desc: "Tailored door solutions for your space." },
   { title: "Window Replacement", desc: "Upgrade your home with modern, efficient windows." },
-  { title: "Maintenance & Repair", desc: "Keep your products in top condition." },
+  { title: "Home Rennovation", desc: "Keep your products in top condition." },
 ];
 
 const ServicesSection: React.FC = () => {
