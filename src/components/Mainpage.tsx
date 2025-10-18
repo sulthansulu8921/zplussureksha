@@ -49,7 +49,7 @@ const Mainpage: React.FC = () => {
         <p>📞 +91 919497376797</p>
         <p>✉️ zplussureksha@gmail.com</p>
         <p>
-          9/47 Nellukuthupara| Nallepilly Road| Panayur PO| Chittur Palakkad
+          9/47 Nellukuthupara  Nallepilly Road Panayur PO Chittur Palakkad
           678552
         </p>
       </div>
