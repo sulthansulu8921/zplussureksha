@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/CallButton.css";
 
 const CallButton: React.FC = () => {
-  const phoneNumber = "919497376797"; 
+  const phoneNumber = "09497376797"; 
   const callUrl = `tel:${phoneNumber}`;
 
   return (

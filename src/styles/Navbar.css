@@ -2,7 +2,8 @@
 .navbar_1 {
   width: 100%;
   /* background: linear-gradient(to right, #b3dcf4, #98d030); */
-   background:rgb(219, 218, 218);
+  background: linear-gradient(135deg, rgb(252, 249, 249), rgb(180, 172, 172));
+
   top: 0;
   left: 0;
   height: 160px;

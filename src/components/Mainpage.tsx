@@ -46,7 +46,7 @@ const Mainpage: React.FC = () => {
       </div>
 
       <div className="contact-info">
-        <p>📞 +91 919497376797</p>
+        <p>📞 +91 9497376797</p>
         <p>✉️ zplussureksha@gmail.com</p>
         <p>
           9/47 Nellukuthupara  Nallepilly Road Panayur PO Chittur Palakkad
