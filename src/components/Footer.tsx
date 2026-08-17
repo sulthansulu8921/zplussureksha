@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
         <div className="footer-logo">
           <div className="logo">
             <img
-              src={`${process.env.PUBLIC_URL}/image/Z+ LOGO.png`}
-              alt="logo"
+              src={`${process.env.PUBLIC_URL}/image/Z+.png`}
+              alt="ZPlus Sureksha Logo"
             />
           </div>
           <p className="container_text">Doors | Frames | Windows</p> <br />

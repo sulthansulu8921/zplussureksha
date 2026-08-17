@@ -8,9 +8,19 @@
       "type": "image/x-icon"
     },
     {
-      "src": "zplus-sureksha-premium-wpc-doors-frames-windows-frames-shutters-manufacturer.png",
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "zplus-sureksha-premium-wpc-doors-frames-windows-frames-shutters-manufacturer.png",
+      "type": "image/png",
+      "sizes": "579x579"
     }
   ],
   "start_url": ".",
